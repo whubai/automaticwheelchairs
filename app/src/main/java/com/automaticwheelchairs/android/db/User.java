@@ -3,16 +3,14 @@ package com.automaticwheelchairs.android.db;
 import org.litepal.crud.DataSupport;
 
 /**
- * Created by Administrator on 2017/3/16.
+ * Created by Administrator on 2017/3/19.
  */
 
 public class User extends DataSupport {
 
     private int id;
 
-    private String account;
-
-    private String password;
+    private String name;
 
     public int getId() {
         return id;
@@ -22,19 +20,11 @@ public class User extends DataSupport {
         this.id = id;
     }
 
-    public String getAccount() {
-        return account;
+    public String getName() {
+        return name;
     }
 
-    public void setAccount(String account) {
-        this.account = account;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
     }
 }

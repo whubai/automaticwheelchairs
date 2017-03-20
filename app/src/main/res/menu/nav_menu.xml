@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/travel_record"
+            android:icon="@drawable/travel_record"
+            android:title="行驶记录" />
+        <item
+            android:id="@+id/my_location"
+            android:icon="@drawable/my_location"
+            android:title="我的位置" />
+        <item
+            android:id="@+id/system_messages"
+            android:icon="@drawable/system_messages"
+            android:title="系统消息" />
+        <item
+            android:id="@+id/set_centre"
+            android:icon="@drawable/set_centre"
+            android:title="设置中心" />
+        <item
+            android:id="@+id/version_update"
+            android:icon="@drawable/version_update"
+            android:title="版本更新" />
+
+    </group>
+
+</menu>

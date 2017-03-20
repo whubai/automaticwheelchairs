@@ -1,6 +1,7 @@
 package com.automaticwheelchairs.android;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -8,6 +9,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.InputDeviceCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -101,10 +104,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button usewheelchairs = (Button) findViewById(R.id.use_wheelchairs);
-        returnLocation.setOnClickListener(new View.OnClickListener() {
+        usewheelchairs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //此处添加立即用车逻辑
+                Intent intent = new Intent(MainActivity.this, InputDialogActivity.class);
+                startActivity(intent);
             }
         });
     }

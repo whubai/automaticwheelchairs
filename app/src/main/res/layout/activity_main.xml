@@ -10,9 +10,9 @@
         android:layout_height="match_parent">
 
         <com.baidu.mapapi.map.MapView
-            android:id="@+id/baidumap_view"
-            android:layout_width="match_parent"
+            android:id="@+id/bmapView"
             android:layout_height="match_parent"
+            android:layout_width="match_parent"
             android:clickable="true" />
 
         <android.support.v7.widget.Toolbar
@@ -21,27 +21,31 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <Button
-            android:id="@+id/return_location"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|left"
-            android:layout_margin="15dp"
-            android:background="@drawable/return_location" />
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="自动轮椅"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
 
         <Button
             android:id="@+id/use_wheelchairs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_margin="80dp"
-            android:background="@drawable/use_wheelchairs"
+            android:layout_margin="15dp"
             android:text="立即用车"
-            android:padding="20dp"
-            android:textSize="40sp"
-            android:textColor="#FFFF00" />
+            android:background="@drawable/button"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:textColor="#fffffb" />
 
     </android.support.design.widget.CoordinatorLayout>
 

@@ -49,17 +49,10 @@ public class CustomDialog extends Dialog {
     public void setContentView(View view) {
     }
 
-    /**
-     * 确定键监听器
-     * @param listener
-     */
     public void setOnPositiveListener(View.OnClickListener listener){
         positiveButton.setOnClickListener(listener);
     }
-    /**
-     * 取消键监听器
-     * @param listener
-     */
+
     public void setOnNegativeListener(View.OnClickListener listener){
         negativeButton.setOnClickListener(listener);
     }

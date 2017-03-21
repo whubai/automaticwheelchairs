@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
             LatLng ll = new LatLng(location.getLatitude(), location.getLongitude());
             MapStatusUpdate update = MapStatusUpdateFactory.newLatLng(ll);
             baiduMap.animateMapStatus(update);
-            update = MapStatusUpdateFactory.zoomTo(19f);
+            update = MapStatusUpdateFactory.zoomTo(12f);
             baiduMap.animateMapStatus(update);
             isFirstLocate = false;
         }
@@ -179,8 +179,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initLocation(){
         LocationClientOption option = new LocationClientOption();
-        option.setScanSpan(2000);
+        option.setScanSpan(5000);
         option.setIsNeedAddress(true);
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
         mLocationClient.setLocOption(option);
     }
 
